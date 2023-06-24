@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Library System</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#books">
+            <h1>Library System</h1>
+        </a>
+        <ul>
+            <a href="#books">
+                <li>Books</li>
+            </a>
+            <a href="#register">
+                <li>Register</li>
+            </a>
+            <a href="#">
+                <li>Contact Us</li>
+            </a>
+            <a href="#">
+                <li>Logout</li>
+            </a>
+            <li></li>
+        </ul>
+    </nav>
+    <section id="books">
+        <div class="books">
+            <h1>Books</h1>
+            <table>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a
+                            href="https://www.amazon.in/Clean-Code-Robert-C-Martin/dp/8131773388/">
+                            <h3>Clean Code</h3>
+                        </a>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>Publication Date: January 2012</td>
+                            </tr>
+                            <tr>
+                                <td>Pages: 434</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 9788131773383</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Robert C Martin</td>
+                    <td>Programming</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="https://www.amazon.in/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/">
+                            <h3>Art of Computer Programming</h3>
+                        </a>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>Publication Date: March 2011</td>
+                            </tr>
+                            <tr>
+                                <td>Pages: 3168</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 978-0321751041</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Donald Knuth</td>
+                    <td>Programming</td>
+                    <td>Not Available</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="https://books.google.co.in/books/about/Head_First_Java.html?id=kKtQAAAAMAAJ&source=kp_book_description&redir_esc=y">
+                            <h3>Head First Java</h3>
+                        </a>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>Publication Date: November 2007</td>
+                            </tr>
+                            <tr>
+                                <td>Pages: 619</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 9780596004651</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Kathy Sierra, Bert Bates</td>
+                    <td>Java Language</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="https://www.amazon.in/dp/B009ZUZ9FW?tag=guru99-21&geniuslink=true">
+                            <h3>C Programming Language</h3>
+                        </a>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>Publication Date: March 1988</td>
+                            </tr>
+                            <tr>
+                                <td>Pages: 279</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: B009ZUZ9FW</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Brian W. Kernighan</td>
+                    <td>C Language</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="https://en.wikipedia.org/wiki/Half_Girlfriend">
+                            <h3>Half Girlfriend</h3>
+                        </a>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>Publication Date: October 2014</td>
+                            </tr>
+                            <tr>
+                                <td>Pages: 280</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 9788129135728</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Chetan Bhagat</td>
+                    <td>Drama</td>
+                    <td>Available</td>
+                </tr>
+            </table>
+    </section>
+    </div>
+    <section id="register">
+        <div class="register">
+            <h1>Register</h1>
+            <form action="#books">
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name" required>
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" id="last-name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" required>
+                <label for="age">Age:</label>
+                <input type="number" name="Age" id="age" required min="5" max="100">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <label for="cnf-pass">Confirm Password</label>
+                <input type="password" name="cnf-pass" id="cnf-pass" required>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
